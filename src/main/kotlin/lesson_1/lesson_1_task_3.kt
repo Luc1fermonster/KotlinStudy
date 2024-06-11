@@ -3,12 +3,12 @@ package org.example.lesson_1
 fun main(){
     val year = 1961
     var hour = 9
-    var minute = 7
+    var minutes = 7
     println(year)
     println(hour)
-    println(minute)
+    println(minutes)
     hour = 10
-    minute = 55
-    println("$hour:$minute")
+    minutes = 55
+    println("$hour:$minutes")
 }
 
