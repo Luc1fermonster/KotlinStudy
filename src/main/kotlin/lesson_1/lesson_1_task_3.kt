@@ -4,15 +4,15 @@ fun main(){
 
     val year = 1961
     var hour:String = "09"
-    var minutes:String = "07"
+    var minute:String = "07"
 
     println(year)
     println(hour)
-    println(minutes)
+    println(minute)
 
     hour = "10"
-    minutes = "55"
+    minute = "55"
 
-    println("$hour:$minutes")
+    println("$hour:$minute")
 }
 
