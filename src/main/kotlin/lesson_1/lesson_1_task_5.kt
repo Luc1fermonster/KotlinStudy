@@ -1,10 +1,8 @@
 package org.example.lesson_1
 
-fun main(){
-    var seconds = 6_480
-    val hours = seconds/3600
-    val leftSec1 = seconds-(hours*3600)
-    val minutes = leftSec1/60
-    seconds = seconds - (hours*3600) - (minutes*60)
-    println(String.format(("%02d:%02d:%02d"), hours, minutes, seconds))
+fun main() {
+    val secInMin = 60
+    val secInHour = 3600
+    val seconds = 6480
+    println(String.format(("%02d:%02d:%02d"), (seconds / secInHour), (seconds % secInHour) / secInMin , (seconds % secInMin)))
 }
