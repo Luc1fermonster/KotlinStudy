@@ -8,7 +8,7 @@ fun main() {
     val minInTransit = 457
     val minArrive = minStart + minInTransit
     val arriveHour = minArrive / MIN_IN_HOUR
-    val remainingMinutes = minArrive % 60
+    val remainingMinutes = minArrive % MIN_IN_HOUR
 
     println(String.format(("%02d:%02d"), (hourStart + arriveHour), remainingMinutes))
 }
