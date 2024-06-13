@@ -1,17 +1,20 @@
 package org.example.lesson_3
 
-val numberToLearn: Int = 6
+const val NUMBER_TO_LEARN: Int = 6
+
 fun main(){
-    printMultiplicationTable()
+    println(""" 
+        $NUMBER_TO_LEARN * 1 = ${NUMBER_TO_LEARN*1}
+        $NUMBER_TO_LEARN * 2 = ${NUMBER_TO_LEARN*2}
+        $NUMBER_TO_LEARN * 3 = ${NUMBER_TO_LEARN*3}
+        $NUMBER_TO_LEARN * 4 = ${NUMBER_TO_LEARN*4}
+        $NUMBER_TO_LEARN * 5 = ${NUMBER_TO_LEARN*5}
+        $NUMBER_TO_LEARN * 6 = ${NUMBER_TO_LEARN*6}
+        $NUMBER_TO_LEARN * 7 = ${NUMBER_TO_LEARN*7}
+        $NUMBER_TO_LEARN * 8 = ${NUMBER_TO_LEARN*8}
+        $NUMBER_TO_LEARN * 9 = ${NUMBER_TO_LEARN*9}
+    """.trimIndent()
+    )
 }
 
-fun printTableLine(multiplier: Int, result: Int) {
-    println("$numberToLearn * $multiplier = $result")
-}
 
-fun printMultiplicationTable() {
-    for (multiplier in 1..10) {
-        val result = numberToLearn * multiplier
-        printTableLine(multiplier, result)
-    }
-}
