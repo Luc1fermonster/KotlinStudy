@@ -1,11 +1,9 @@
 package org.example.lesson_5
 
-import kotlin.random.Random
-
 fun main() {
     val randomNumbers = mutableListOf<Int>()
     for (i in 1..3) {
-        val randomNumber = Random.nextInt(1, 43)
+        val randomNumber = (1..43).random()
         randomNumbers.add(randomNumber)
     }
     val variablesList = mutableListOf<Int>()
