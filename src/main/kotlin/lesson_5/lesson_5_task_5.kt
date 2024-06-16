@@ -1,9 +1,11 @@
 package org.example.lesson_5
 
 fun main() {
+    val lastNumberInRandom = 43
+    val numberOfGuesses = 3
     val randomNumbers = mutableListOf<Int>()
-    for (i in 1..3) {
-        val randomNumber = (1..43).random()
+    for (i in 1..numberOfGuesses) {
+        val randomNumber = (1..lastNumberInRandom).random()
         randomNumbers.add(randomNumber)
     }
     val variablesList = mutableListOf<Int>()
