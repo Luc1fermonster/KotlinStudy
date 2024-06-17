@@ -1,10 +1,11 @@
 package org.example.lesson_5
 
-import kotlin.random.Random
+const val START_OF_LIST_OF_RANDOM_NUMBERS = 1
+const val END_OF_LIST_OF_RANDOM_NUMBERS = 43
 
 fun main() {
-    val firstWinningNumber = Random.nextInt(1, 43)
-    val secondWinningNumber = Random.nextInt(1, 43)
+    val firstWinningNumber = (START_OF_LIST_OF_RANDOM_NUMBERS .. END_OF_LIST_OF_RANDOM_NUMBERS).random()
+    val secondWinningNumber = (START_OF_LIST_OF_RANDOM_NUMBERS .. END_OF_LIST_OF_RANDOM_NUMBERS).random()
     println("сделайте первую попытку: ")
     val firstGuess = readln().toInt()
 
