@@ -14,7 +14,7 @@ fun main() {
 
     val isSuperPrize = (firstGuess == firstWinningNumber || firstGuess == secondWinningNumber) &&
             (secondGuess == firstWinningNumber || secondGuess == secondWinningNumber) &&
-            (firstGuess != secondGuess)
+                (firstGuess != secondGuess)
 
     val isConsolationPrize = (firstGuess == firstWinningNumber || firstGuess == secondWinningNumber) ||
             (secondGuess == firstWinningNumber || secondGuess == secondWinningNumber)
